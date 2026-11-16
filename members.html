@@ -3,45 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ECUT-VQA 东华理工大学视觉质量评价研究团队成员，包括指导教师与研究生。">
+  <meta name="description" content="ECUT-VQA 东华理工大学视觉质量评价研究团队成员，介绍指导教师王同罕、贾惠珍。">
+  <meta name="theme-color" content="#23344f">
   <title>团队成员 | ECUT-VQA</title>
   <style>
-    :root { --navy:#22334f; --deep:#19273e; --teal:#04788d; --ink:#26364b; --muted:#607087; --line:#dce3ed; --bg:#f5f7fb; }
+    :root {
+      --navy:#22344f; --navy-deep:#19283e; --teal:#006f86;
+      --ink:#273b51; --muted:#718095; --line:#e2e7f0;
+      --background:#f6f8fc; --card:#fff; --label:#edf3f9;
+    }
     * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.8 "Noto Sans SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    a { color:#086e88; text-decoration:none; }
+    html { scroll-behavior:smooth; scroll-padding-top:94px; }
+    body { margin:0; background:var(--background); color:var(--ink); font:14px/1.75 "Noto Sans SC","Microsoft YaHei","PingFang SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--teal); text-decoration:none; }
     a:hover { text-decoration:underline; }
-    .container { max-width:970px; margin:auto; padding:0 28px; }
-    .site-header { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--line); }
-    .header-row { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .brand { font:700 22px Georgia,serif; color:var(--deep); }
-    .brand small { display:block; color:var(--muted); font:10px/1.5 "Segoe UI",sans-serif; letter-spacing:1.2px; text-transform:uppercase; }
-    .nav { display:flex; flex-wrap:wrap; gap:20px; }
-    .nav a { font-size:13px; font-weight:600; color:#526076; }
-    .nav .active { color:var(--teal); }
-    .hero { background:linear-gradient(115deg,#1c2a43,#344765 67%,#263b59); color:#fff; text-align:center; padding:74px 0 70px; }
-    .hero .eyebrow { color:#b9dbe4; font-size:12px; letter-spacing:2.5px; text-transform:uppercase; }
-    .hero h1 { font:700 clamp(34px,5vw,55px)/1.25 Georgia,"Noto Serif SC","SimSun",serif; margin:14px 0 9px; }
-    .hero p { margin:0; color:#dce5f2; }
-    main { padding:58px 0 75px; }
-    .section { margin-bottom:62px; }
-    .section-title { border-bottom:1px solid var(--line); padding-bottom:12px; margin:0 0 24px; font:600 24px "Noto Serif SC","Songti SC",serif; color:var(--navy); }
-    .section-title span { margin-left:12px; color:#7b8ca0; font:12px "Segoe UI",sans-serif; letter-spacing:1px; }
-    .faculty-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
-    .person { display:flex; gap:18px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:8px; padding:22px; }
-    .person img { width:106px; height:140px; flex:0 0 auto; object-fit:cover; object-position:center top; border:1px solid #d6e1ea; border-radius:4px; background:#e9eff5; }
-    .person h3 { color:var(--navy); font-size:18px; margin:0; line-height:1.4; }
-    .latin { color:var(--muted); font-size:12px; margin:2px 0 6px; }
-    .role { color:var(--teal); font-size:12px; font-weight:700; margin:0 0 9px; }
-    .person p { font-size:13px; color:#53677c; line-height:1.7; margin:0 0 9px; }
-    .links { display:flex; flex-wrap:wrap; gap:7px 13px; font-size:12px; font-weight:600; }
-    .placeholder { background:#fff; border:1px dashed #c8d5e2; border-radius:8px; padding:26px; color:var(--muted); }
-    .placeholder p { margin:0; }
-    .footer { background:#192d46; color:#d8e2ef; padding:26px 0; font-size:12px; }
-    .footer .container { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-    .footer a { color:#e2f4f8; }
-    @media (max-width:800px) { .faculty-grid { grid-template-columns:1fr; } .header-row { align-items:flex-start; flex-direction:column; gap:8px; padding:13px 0; } .nav { gap:8px 15px; } }
-    @media (max-width:480px) { .container { padding:0 18px; } .hero { padding:55px 0; } .person { padding:14px; gap:12px; } .person img { width:83px; height:112px; } }
+    a:focus-visible { outline:3px solid #74b4c2; outline-offset:4px; border-radius:3px; }
+    .container { max-width:1080px; margin:0 auto; padding:0 28px; }
+    .site-header { position:sticky; top:0; z-index:50; border-bottom:1px solid var(--line); background:rgba(255,255,255,.98); box-shadow:0 1px 8px rgba(31,55,78,.03); }
+    .header-row { min-height:66px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
+    .brand { color:var(--navy-deep); font:700 23px/1.2 Georgia,"Times New Roman",serif; letter-spacing:.1px; flex-shrink:0; }
+    .brand small { display:block; margin-top:3px; color:#8b99a9; font:600 9px/1.3 "Segoe UI",sans-serif; letter-spacing:1.2px; text-transform:uppercase; }
+    .nav { display:flex; flex-wrap:wrap; align-items:center; gap:7px 20px; }
+    .nav a { font-size:12px; font-weight:600; color:#65738a; white-space:nowrap; }
+    .nav a:hover,.nav a.active { color:var(--teal); text-decoration:none; }
+    .nav a.active { position:relative; }
+    .nav a.active:after { content:""; height:2px; background:var(--teal); position:absolute; left:0; right:0; bottom:-23px; }
+    main { min-height:calc(100vh - 133px); }
+    .page-heading { padding:50px 0 35px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fff 0%,#f8faff 100%); }
+    .crumb { color:#8290a2; font-size:12px; margin:0 0 12px; }
+    .crumb a { color:#68788d; }
+    .page-heading h1 { color:var(--navy-deep); font:700 35px/1.25 "Noto Serif SC","Songti SC","SimSun",Georgia,serif; margin:0 0 9px; }
+    .page-heading .sub { margin:0; color:#627389; font-size:13px; }
+    .workspace { display:grid; grid-template-columns:205px minmax(0,1fr); gap:42px; padding-top:46px; padding-bottom:78px; }
+    .aside { align-self:start; position:sticky; top:112px; }
+    .side-heading { margin:0 0 15px; padding:0 0 12px; border-bottom:1px solid #d9e0eb; font-size:15px; font-weight:700; color:#233851; }
+    .side-menu { display:flex; flex-direction:column; gap:2px; }
+    .side-item { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 12px; color:#6e7e92; border-radius:7px; font-size:13px; }
+    .side-item.selected { background:#e9f1f7; color:var(--navy); font-weight:700; border-left:3px solid var(--teal); padding-left:9px; }
+    .side-item.selected:hover { text-decoration:none; }
+    .side-item.unavailable { color:#9ba7b6; }
+    .side-item .num { color:#8191a5; font-size:11px; font-family:"Segoe UI",sans-serif; }
+    .side-rule { height:1px; background:var(--line); margin:23px 0 19px; }
+    .side-caption { margin:0 0 9px; font-size:12px; font-weight:700; color:#758399; }
+    .side-note { color:#8794a4; font-size:12px; line-height:1.9; margin:0; }
+    .content-head { display:flex; justify-content:space-between; align-items:flex-end; gap:15px; border-bottom:1px solid #dbe2ec; padding:0 0 15px; margin:0 0 22px; }
+    .content-head h2 { margin:0; color:var(--navy-deep); font:700 23px/1.3 "Noto Serif SC","Songti SC","SimSun",Georgia,serif; }
+    .content-head .english { font:600 10px/1.5 "Segoe UI",Arial,sans-serif; letter-spacing:1.7px; text-transform:uppercase; color:#8997a9; margin-left:10px; }
+    .count { color:#8997a9; font:600 12px "Segoe UI",sans-serif; }
+    .people-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .person-card { min-width:0; background:var(--card); border:1px solid #e1e7f0; border-radius:12px; box-shadow:0 5px 18px rgba(31,47,76,.025); padding:30px 25px 25px; text-align:center; transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease; }
+    .person-card:hover { transform:translateY(-2px); border-color:#cfdee9; box-shadow:0 9px 24px rgba(31,47,76,.065); }
+    .portrait { width:116px; height:116px; border-radius:50%; display:block; object-fit:cover; object-position:center 19%; margin:0 auto 17px; border:4px solid #f3f6fa; box-shadow:0 0 0 1px #e3e9f1; background:#edf2f7; }
+    .person-name { margin:0; color:#23364e; font-size:19px; font-weight:750; line-height:1.3; }
+    .english-name { color:#7d8ba0; font-size:12px; margin:4px 0 12px; }
+    .role { display:inline-block; padding:3px 12px; background:#edf3fa; color:#54708b; font-size:11px; font-weight:650; border-radius:999px; line-height:1.65; }
+    .expertise { margin:16px auto 18px; min-height:43px; max-width:245px; color:#718095; font-size:12px; line-height:1.8; }
+    .links { display:flex; justify-content:center; gap:11px; align-items:center; font-size:12px; font-weight:650; }
+    .links .separator { color:#d7dfe8; }
+    .content-note { border-top:1px solid #e1e7f0; padding-top:23px; margin-top:35px; color:#8290a2; font-size:12px; line-height:1.9; }
+    .content-note strong { color:#51667d; }
+    .bottom-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
+    .bottom-links a { display:inline-block; font-size:12px; font-weight:650; }
+    .footer { background:#192d46; color:#d3e1ec; padding:22px 0; font-size:12px; }
+    .footer .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+    .footer a { color:#e7f5fb; }
+    @media(max-width:890px) {
+      .container{padding:0 22px;}
+      .workspace{grid-template-columns:165px minmax(0,1fr); gap:24px;}
+      .person-card{padding:25px 13px 22px;}
+      .nav { gap:8px 12px; }
+    }
+    @media(max-width:660px) {
+      .header-row{flex-direction:column;align-items:flex-start;padding:13px 0;gap:10px;}
+      .nav{gap:8px 17px;}
+      .nav a.active:after{display:none;}
+      .page-heading{padding:32px 0 25px;}
+      .page-heading h1{font-size:29px;}
+      .workspace{display:block;padding-top:26px;padding-bottom:48px;}
+      .aside{position:static;margin-bottom:28px;}
+      .side-heading{margin-bottom:6px;}
+      .side-menu{flex-direction:row;flex-wrap:wrap;gap:6px;}
+      .side-item{padding:7px 10px;background:#f0f3f8;}
+      .side-item.selected{padding-left:7px;}
+      .side-rule,.side-caption,.side-note{display:none;}
+      .people-grid{gap:12px;}
+      .person-card{padding:22px 12px;}
+      .portrait{width:93px;height:93px;}
+      .person-name{font-size:17px;}
+      .expertise{font-size:11px;min-height:56px;}
+      .links{gap:7px;flex-wrap:wrap;font-size:11px;}
+    }
+    @media(max-width:380px) {
+      .people-grid{grid-template-columns:1fr;}
+      .expertise{min-height:auto;}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
 <body>
@@ -55,60 +111,77 @@
         <a class="active" href="members.html" aria-current="page">团队成员</a>
         <a href="publications.html">发表成果</a>
         <a href="index.html#contact">联系我们</a>
-        <a href="https://github.com/ECUT-VQA">GitHub</a>
+        <a href="https://github.com/ECUT-VQA" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
   </header>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">East China University of Technology</div>
-      <h1>团队成员</h1>
-      <p>Our Members · Visual Quality Assessment Group</p>
-    </div>
-  </section>
-  <main class="container">
-    <section class="section">
-      <h2 class="section-title">指导教师 <span>FACULTY</span></h2>
-      <div class="faculty-grid">
-        <article class="person">
-          <img src="assets/wang-tonghan.jpg" alt="王同罕老师的教师照片">
-          <div>
-            <h3>王同罕</h3>
-            <div class="latin">Tonghan Wang</div>
-            <div class="role">副教授 · 硕士研究生导师</div>
-            <p>研究方向：图像质量评价、计算机视觉、图像处理与模式识别。</p>
-            <div class="links">
-              <a href="people/tonghan-wang.html">个人介绍 →</a>
-              <a href="https://ses.ecut.edu.cn/09/eb/c9824a133611/page.htm">学校主页 ↗</a>
-            </div>
-          </div>
-        </article>
-        <article class="person">
-          <img src="assets/jia-huizhen.jpg" alt="贾惠珍老师的教师照片">
-          <div>
-            <h3>贾惠珍</h3>
-            <div class="latin">Huizhen Jia</div>
-            <div class="role">副教授 · 硕士研究生导师</div>
-            <p>研究方向：模式识别、机器学习与图像处理。</p>
-            <div class="links">
-              <a href="people/huizhen-jia.html">个人介绍 →</a>
-              <a href="https://ies.ecut.edu.cn/0e/06/c2315a69126/page.htm">学校主页 ↗</a>
-            </div>
-          </div>
-        </article>
+  <main>
+    <section class="page-heading">
+      <div class="container">
+        <p class="crumb"><a href="index.html">首页</a> <span aria-hidden="true">/</span> 团队成员</p>
+        <h1>团队成员</h1>
+        <p class="sub">OUR TEAM&nbsp; / &nbsp;East China University of Technology</p>
       </div>
     </section>
-    <section class="section">
-      <h2 class="section-title">硕士研究生 <span>MASTER STUDENTS</span></h2>
-      <div class="placeholder"><p>成员名单整理中。后续可按入学年份展示姓名、研究方向和个人主页。</p></div>
-    </section>
-    <section class="section">
-      <h2 class="section-title">毕业成员 <span>ALUMNI</span></h2>
-      <div class="placeholder"><p>毕业成员信息整理中。经成员确认后，可按毕业年份展示。</p></div>
-    </section>
+    <div class="container workspace">
+      <aside class="aside" aria-label="成员类别">
+        <h2 class="side-heading">成员</h2>
+        <div class="side-menu">
+          <a href="#faculty" class="side-item selected" aria-current="true"><span>指导教师</span><span class="num">02</span></a>
+          <span class="side-item unavailable"><span>硕士研究生</span><span class="num">待更新</span></span>
+          <span class="side-item unavailable"><span>毕业成员</span><span class="num">待更新</span></span>
+        </div>
+        <div class="side-rule"></div>
+        <p class="side-caption">学术交流</p>
+        <p class="side-note">欢迎访问导师的学校官方主页，了解研究方向和公开联系方式。</p>
+      </aside>
+      <div class="content" id="faculty">
+        <div class="content-head">
+          <h2>指导教师 <span class="english">Faculty</span></h2>
+          <span class="count">2 MEMBERS</span>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <img class="portrait" src="assets/wang-tonghan.jpg" alt="王同罕老师照片" width="116" height="116">
+            <h3 class="person-name">王同罕</h3>
+            <p class="english-name">Tonghan Wang</p>
+            <div class="role">副教授 · 硕士研究生导师</div>
+            <p class="expertise">图像质量评价 · 计算机视觉<br>图像处理与模式识别</p>
+            <div class="links">
+              <a href="people/tonghan-wang.html">个人介绍</a>
+              <span class="separator" aria-hidden="true">|</span>
+              <a href="https://ses.ecut.edu.cn/09/eb/c9824a133611/page.htm" target="_blank" rel="noopener noreferrer">学校主页 ↗</a>
+            </div>
+          </article>
+          <article class="person-card">
+            <img class="portrait" src="assets/jia-huizhen.jpg" alt="贾惠珍老师照片" width="116" height="116">
+            <h3 class="person-name">贾惠珍</h3>
+            <p class="english-name">Huizhen Jia</p>
+            <div class="role">副教授 · 硕士研究生导师</div>
+            <p class="expertise">模式识别 · 机器学习<br>图像处理</p>
+            <div class="links">
+              <a href="people/huizhen-jia.html">个人介绍</a>
+              <span class="separator" aria-hidden="true">|</span>
+              <a href="https://ies.ecut.edu.cn/0e/06/c2315a69126/page.htm" target="_blank" rel="noopener noreferrer">学校主页 ↗</a>
+            </div>
+          </article>
+        </div>
+        <div class="content-note">
+          <strong>团队成员信息：</strong>研究生与毕业生名单正在整理，确认后将逐步补充。<br>
+          相关学术合作及公开联系方式请参考导师学校主页。
+          <div class="bottom-links">
+            <a href="index.html#contact">联系与合作 →</a>
+            <a href="publications.html">发表成果 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
-    <div class="container"><span>© ECUT-VQA · 东华理工大学视觉质量评价研究团队</span><a href="https://github.com/ECUT-VQA">GitHub Organization</a></div>
+    <div class="container">
+      <span>© ECUT-VQA · 东华理工大学视觉质量评价研究团队</span>
+      <a href="https://github.com/ECUT-VQA">GitHub Organization</a>
+    </div>
   </footer>
 </body>
 </html>
