@@ -1,6 +1,114 @@
 <!doctype html>
-
-<link rel="stylesheet" href="../assets/navigation.css">
-
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Publications | ECUT-VQA</title><meta name="description" content="ECUT-VQA Visual Quality Assessment Group, East China University of Technology."/><link rel="stylesheet" href="assets/site.css"/></head>
-<body><header class="topbar"><div class="container nav"><a class="brand" href="index.html">ECUT-VQA <small>VISUAL QUALITY ASSESSMENT GROUP</small></a><nav class="navlinks" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="members.html">Members</a><a class="" href="publications.html">Publications</a><a class="" href="https://github.com/ECUT-VQA">GitHub</a></nav></div></header><main><section class="pageheading"><div class="container"><p class="kicker">Research Output</p><h1>Publications</h1><p>Selected research contributions and open-source implementations.</p></div></section><section class="section"><div class="container"><div class="paper"><span class="badge">Accepted in 2026 · Scheduled for 2027</span><h3>Multi-Scale Hierarchical Adaptive No-Reference Image Quality Assessment via Diffusion Prior</h3><p>Journal of Image and Graphics (中国图象图形学报). DOI: 10.11834/jig.260455. Acceptance/publication schedule is based on group-provided information.</p><a href="https://doi.org/10.11834/jig.260455">DOI</a> · <a href="https://github.com/ECUT-VQA/Diffusion-prior-multi-scale-hierarchical-adaptive-no-reference-image-quality-assessment">Code</a></div><div class="paper"><span class="badge">2024</span><h3>Dual-stream mutually adaptive quality assessment for authentic distortion image</h3><p>Journal of Visual Communication and Image Representation, 102, 104216.</p><a href="https://doi.org/10.1016/j.jvcir.2024.104216">Paper</a> · <a href="https://github.com/ECUT-VQA/Dual-Stream-Mutually-Adaptive-Quality-Assessment-for-Authentic-Distortion-Image">Code</a></div></div></section></main><footer class="footer"><div class="container"><span>© ECUT-VQA · East China University of Technology</span><a href="https://github.com/ECUT-VQA">GitHub Organization</a></div></footer></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#23344f">
+  <meta name="description" content="ECUT-VQA 东华理工大学视觉质量评价研究团队发表成果：图像质量评价、计算机视觉与深度学习方向的论文及开源代码。">
+  <title>发表成果 | ECUT-VQA</title>
+  <style>
+    :root{--navy:#22344f;--deep:#19283e;--teal:#04788d;--ink:#283b52;--muted:#65778c;--line:#dce5ed;--bg:#f6f8fc;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--bg);font:15px/1.85 "Noto Sans SC","Microsoft YaHei","PingFang SC",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+    a{color:#046f87;text-decoration:none}
+    a:hover{text-decoration:underline}
+    a:focus-visible{outline:3px solid #79bfcc;outline-offset:3px;border-radius:3px}
+    .container{max-width:970px;margin:0 auto;padding:0 28px}
+    .site-header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    .header-row{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:36px}
+    .brand{font:700 27px/1.15 Georgia,"Times New Roman",serif;color:var(--deep);white-space:nowrap}
+    .brand small{display:block;margin-top:4px;color:#748198;font:600 11px/1.4 "Segoe UI",Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase}
+    .nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;column-gap:28px;row-gap:12px}
+    .nav a{font-size:15px;font-weight:600;white-space:nowrap;color:#526076}
+    .nav a.active{color:var(--teal)}
+    .page-intro{background:linear-gradient(180deg,#fff,#f8faff);border-bottom:1px solid var(--line);padding:47px 0 38px}
+    .crumb{color:#8291a4;font-size:12px;margin:0 0 13px}
+    .crumb a{color:#68798e}
+    .page-intro h1{color:var(--deep);font:700 36px/1.25 "Noto Serif SC","Songti SC","SimSun",Georgia,serif;margin:0 0 8px}
+    .page-intro .en{font:600 11px/1.5 "Segoe UI",Arial,sans-serif;color:#8291a4;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px}
+    .page-intro .subtitle{color:#52667c;margin:0;max-width:780px;font-size:14px}
+    main{flex:1}
+    .publications{padding-top:42px;padding-bottom:66px}
+    .section-head{display:flex;align-items:baseline;gap:13px;padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid #d8e2eb}
+    .section-head h2{color:var(--deep);font-size:21px;margin:0;font-weight:700}
+    .section-head span{font:600 10px/1.5 "Segoe UI",Arial,sans-serif;color:#7a8899;letter-spacing:1.6px;text-transform:uppercase}
+    .paper-entry{display:grid;grid-template-columns:108px minmax(0,1fr);column-gap:22px;padding:27px 0;border-bottom:1px solid var(--line)}
+    .paper-entry:last-of-type{border-bottom:none}
+    .year{font:700 16px/1.6 "Segoe UI",Arial,sans-serif;color:var(--teal)}
+    .year-note{display:block;margin-top:4px;font-size:11px;font-weight:600;color:#7c8da1;line-height:1.65}
+    .paper-title{font-size:18px;line-height:1.5;color:#22354f;margin:0 0 10px;font-weight:750}
+    .paper-journal{color:#526780;margin:0 0 7px;font-size:14px}
+    .paper-desc{margin:8px 0 12px;color:#63758a;font-size:13px;line-height:1.8}
+    .paper-status{display:inline-block;color:#066c81;background:#e5f2f5;border:1px solid #d3e8ed;padding:2px 10px;font-size:11px;font-weight:700;border-radius:999px;line-height:1.75;margin:0 0 10px}
+    .paper-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:11px;font-size:13px;font-weight:700}
+    .paper-links a{padding:4px 11px;border:1px solid #cadfe7;background:#fff;border-radius:6px}
+    .paper-links a:hover{background:#eaf4f6;text-decoration:none}
+    .paper-links span{color:#8394a7;font-weight:400}
+    .disclaimer{color:#7a899a;font-size:12px;line-height:1.9;padding-top:14px}
+    .footer{background:#192d46;color:#d5e2ee;padding:22px 0;font-size:12px}
+    .footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .footer a{color:#e3f3f8}
+    @media(max-width:1050px){.header-row{flex-wrap:wrap;padding-top:14px;padding-bottom:14px;gap:16px}.nav{justify-content:flex-start;column-gap:22px}}
+    @media(max-width:760px){.container{padding:0 20px}.header-row{flex-direction:column;align-items:flex-start;gap:12px}.brand{font-size:25px}.nav{column-gap:16px;row-gap:10px}.nav a{font-size:14px}.page-intro{padding:30px 0}.page-intro h1{font-size:30px}.publications{padding-top:28px}.paper-entry{grid-template-columns:1fr;gap:9px;padding:23px 0}.year-note{display:inline;margin-left:10px}.paper-title{font-size:17px}}
+  </style>
+  <!-- 全站导航样式在页面专属样式之后加载，统一所有页面的字号和间距 -->
+  <link rel="stylesheet" href="assets/navigation.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">ECUT-VQA<small>Visual Quality Assessment Group</small></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="index.html#news">新闻动态</a>
+        <a href="index.html#interests">研究方向</a>
+        <a href="members.html">团队成员</a>
+        <a class="active" href="publications.html" aria-current="page">发表成果</a>
+        <a href="index.html#contact">联系我们</a>
+        <a href="https://github.com/ECUT-VQA" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <p class="crumb"><a href="index.html">首页</a> / 发表成果</p>
+        <h1>发表成果</h1>
+        <p class="en">Publications · Research Output</p>
+        <p class="subtitle">团队围绕图像质量评价与智能视觉计算开展研究，以下为已公开的代表性论文及相关开源代码。</p>
+      </div>
+    </section>
+    <section class="container publications" aria-label="论文列表">
+      <div class="section-head"><h2>代表论文</h2><span>Selected Publications</span></div>
+      <article class="paper-entry">
+        <div class="year">2026<span class="year-note">已录用 · 计划 2027 刊出</span></div>
+        <div>
+          <span class="paper-status">Accepted · 中国图象图形学报</span>
+          <h3 class="paper-title">Multi-Scale Hierarchical Adaptive No-Reference Image Quality Assessment via Diffusion Prior</h3>
+          <p class="paper-journal"><em>Journal of Image and Graphics</em>（中国图象图形学报） · DOI: 10.11834/jig.260455</p>
+          <p class="paper-desc">扩散先验多尺度层级自适应无参考图像质量评价。融合多尺度特征表示与层级自适应质量预测方法。论文于 2026 年录用，按课题组提供的信息计划于 2027 年刊出。</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.11834/jig.260455" target="_blank" rel="noopener noreferrer">论文 DOI ↗</a>
+            <a href="https://github.com/ECUT-VQA/Diffusion-prior-multi-scale-hierarchical-adaptive-no-reference-image-quality-assessment" target="_blank" rel="noopener noreferrer">开源代码 ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="paper-entry">
+        <div class="year">2024<span class="year-note">已发表</span></div>
+        <div>
+          <h3 class="paper-title">Dual-stream mutually adaptive quality assessment for authentic distortion image</h3>
+          <p class="paper-journal"><em>Journal of Visual Communication and Image Representation</em>, 102, 104216, 2024.</p>
+          <p class="paper-desc">面向真实失真图像的双流相互自适应质量评价研究，通过双流学习提升对真实场景图像感知质量的预测能力。</p>
+          <div class="paper-links">
+            <a href="https://doi.org/10.1016/j.jvcir.2024.104216" target="_blank" rel="noopener noreferrer">论文 DOI ↗</a>
+            <a href="https://github.com/ECUT-VQA/Dual-Stream-Mutually-Adaptive-Quality-Assessment-for-Authentic-Distortion-Image" target="_blank" rel="noopener noreferrer">开源代码 ↗</a>
+          </div>
+        </div>
+      </article>
+      <p class="disclaimer">注：2026 年录用与 2027 年刊出安排依据课题组提供的信息；正式出版年份、卷期和文章编号以期刊发布记录为准。</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><span>© ECUT-VQA · 东华理工大学视觉质量评价研究团队</span><a href="https://github.com/ECUT-VQA">GitHub Organization ↗</a></div></footer>
+</body>
+</html>
