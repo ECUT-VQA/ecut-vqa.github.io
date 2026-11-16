@@ -69,6 +69,83 @@
     .foot a{color:#e2f4f8}
     @media(max-width:780px){.header-row{padding:12px 0;align-items:flex-start;flex-direction:column;gap:9px}.nav{gap:8px 15px}.hero{padding:72px 0}.hero h1{font-size:38px}.hero .cn{font-size:17px;letter-spacing:.5px}.content{padding-top:36px}.list-feature,.project-list,.teacher-list,.contact{grid-template-columns:1fr}.section{margin-bottom:49px}}
     @media(max-width:480px){.container{padding:0 18px}.hero h1{font-size:33px}.hero .tagline{font-size:14px}.news-list li{grid-template-columns:64px 1fr;gap:8px}.teacher{padding:14px;gap:13px}.teacher img{width:76px;height:100px}.sec-head h2{font-size:21px}}
+  
+/* ===== ECUT-VQA Navigation Optimization ===== */
+
+/* Only widen the header, not the page content */
+.site-header .container {
+  max-width: 1240px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Header height and spacing */
+.site-header .header-row {
+  min-height: 86px;
+  gap: 36px;
+}
+
+/* ECUT-VQA brand */
+.site-header .brand {
+  font-size: 27px;
+  line-height: 1.15;
+}
+
+.site-header .brand small {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  margin-top: 4px;
+}
+
+/* Navigation menu */
+.site-header .nav {
+  column-gap: 28px;
+  row-gap: 12px;
+  justify-content: flex-end;
+}
+
+.site-header .nav a {
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* Medium screens */
+@media (max-width: 1050px) {
+  .site-header .header-row {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .site-header .nav {
+    column-gap: 22px;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 780px) {
+  .site-header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-header .brand {
+    font-size: 25px;
+  }
+
+  .site-header .nav {
+    column-gap: 16px;
+    row-gap: 10px;
+  }
+
+  .site-header .nav a {
+    font-size: 14px;
+  }
+}
+
   </style>
 </head>
 <body>
