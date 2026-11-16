@@ -1,6 +1,161 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Home | ECUT-VQA</title><meta name="description" content="ECUT-VQA Visual Quality Assessment Group, East China University of Technology."/><link rel="stylesheet" href="assets/site.css"/></head>
-<body><header class="topbar"><div class="container nav"><a class="brand" href="index.html">ECUT-VQA <small>VISUAL QUALITY ASSESSMENT GROUP</small></a><nav class="navlinks" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="members.html">Members</a><a class="" href="publications.html">Publications</a><a class="" href="https://github.com/ECUT-VQA">GitHub</a></nav></div></header><main><section class="hero"><div class="container"><div class="eyebrow">East China University of Technology</div><h1>ECUT-VQA<br/>Visual Quality Assessment Group</h1><p>Exploring perceptual image quality, authentic distortions, computer vision, and learning-based quality prediction.</p><div class="actions"><a class="btn" href="members.html">Meet the Team</a><a class="btn ghost" href="publications.html">Publications</a></div></div></section>
-<section class="section"><div class="container"><p class="kicker">About Us</p><h2 class="sectiontitle">Visual Perception &amp; Image Quality</h2><p class="lead">ECUT-VQA is a research group at East China University of Technology. We investigate image quality assessment and perceptual visual computing, with an emphasis on effective, reproducible machine-learning methods.</p><p class="lead">ECUT-VQA 是东华理工大学视觉质量评价研究团队，关注图像质量评价、真实失真图像质量评估及计算机视觉相关研究。</p></div></section>
-<section class="section"><div class="container"><p class="kicker">Research</p><h2 class="sectiontitle">Research Interests</h2><div class="grid"><article class="panel"><h3>No-Reference IQA</h3><p>Visual quality prediction without reference images, including authentic distortions.</p></article><article class="panel"><h3>Diffusion Priors</h3><p>Quality-aware representation learning with diffusion-based visual priors.</p></article><article class="panel"><h3>Perceptual Learning</h3><p>Multi-scale features and perceptual representations for visual assessment.</p></article></div></div></section>
-<section class="section"><div class="container"><p class="kicker">Selected Work</p><h2 class="sectiontitle">Featured Research</h2><div class="grid two"><article class="panel"><span class="tag">JVCIR · 2024</span><h3>Dual-Stream Mutually Adaptive Quality Assessment</h3><p>Quality assessment for authentically distorted images.</p><a href="https://doi.org/10.1016/j.jvcir.2024.104216">Paper</a> · <a href="https://github.com/ECUT-VQA/Dual-Stream-Mutually-Adaptive-Quality-Assessment-for-Authentic-Distortion-Image">Code</a></article><article class="panel"><span class="tag">Accepted · 2026</span><h3>Multi-Scale NR-IQA via Diffusion Prior</h3><p>Multi-scale hierarchical adaptive assessment; planned 2027 journal publication per group records.</p><a href="https://doi.org/10.11834/jig.260455">DOI</a> · <a href="https://github.com/ECUT-VQA/Diffusion-prior-multi-scale-hierarchical-adaptive-no-reference-image-quality-assessment">Code</a></article></div><p><a href="publications.html">View all publications →</a></p></div></section></main><footer class="footer"><div class="container"><span>© ECUT-VQA · East China University of Technology</span><a href="https://github.com/ECUT-VQA">GitHub Organization</a></div></footer></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ECUT-VQA 东华理工大学视觉质量评价研究团队。研究图像质量评价、模式识别、计算机视觉与深度学习。">
+  <meta name="theme-color" content="#23344f">
+  <title>ECUT-VQA | 东华理工大学视觉质量评价研究团队</title>
+  <style>
+    :root { --navy:#22334f; --navy-deep:#19273e; --navy-light:#3b4e6a; --teal:#04788d; --teal-light:#e8f5f6; --ink:#26364b; --muted:#607087; --line:#dce3ed; --bg:#f5f7fb; --white:#fff; }
+    * {box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.85 "Noto Sans SC","Microsoft YaHei","PingFang SC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:#086e88;text-decoration:none}
+    a:hover{text-decoration:underline}
+    a:focus-visible{outline:3px solid #80c7d6;outline-offset:3px;border-radius:2px}
+    .container{max-width:970px;margin:0 auto;padding:0 28px}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(22,39,61,.035)}
+    .header-row{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-family:Georgia,"Times New Roman",serif;color:var(--navy-deep);font-size:22px;font-weight:700;letter-spacing:.3px;white-space:nowrap}
+    .brand small{display:block;font:10px/1.4 "Segoe UI",sans-serif;letter-spacing:1.3px;color:var(--muted);text-transform:uppercase}
+    .nav{display:flex;align-items:center;flex-wrap:wrap;column-gap:23px;row-gap:5px}
+    .nav a{font-size:13px;color:#526076;font-weight:600}
+    .nav a:hover,.nav a.active{color:#006f8b;text-decoration:none}
+    .hero{position:relative;isolation:isolate;overflow:hidden;text-align:center;background:linear-gradient(115deg,#1c2a43,#344765 67%,#263b59);color:#f8f9fd;padding:88px 0 86px}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 18% 18%,rgba(142,180,217,.10),transparent 45%),radial-gradient(circle at 86% 100%,rgba(11,127,143,.18),transparent 50%)}
+    .hero .eyebrow{font-size:12px;letter-spacing:3px;color:#b9dbe4;font-weight:700;text-transform:uppercase;margin-bottom:20px}
+    .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(37px,5.2vw,62px);font-weight:700;line-height:1.2;letter-spacing:.1px;max-width:920px;margin:0 auto 13px}
+    .hero .cn{font-size:22px;letter-spacing:2px;font-weight:500;margin:14px auto 13px;color:#f1f5fc}
+    .hero .rule{width:50px;height:3px;background:#d0dae7;margin:18px auto 20px;border-radius:4px}
+    .hero .tagline{font-family:Georgia,"Times New Roman",serif;font-size:17px;color:#e1e9f3;margin:0}
+    .hero .strap{font-size:12px;color:#c5d6e5;letter-spacing:1.6px;margin:17px 0 0}
+    .content{padding:53px 0 64px}
+    .section{margin-bottom:68px}
+    .sec-head{display:flex;align-items:baseline;gap:15px;border-bottom:1px solid #d4deeb;padding-bottom:12px;margin-bottom:22px}
+    .sec-head h2{font:600 23px/1.5 "Noto Serif SC","Songti SC","SimSun",Georgia,serif;margin:0;color:var(--navy)}
+    .sec-head span{font:11px "Segoe UI",sans-serif;color:#77859a;letter-spacing:1.6px;text-transform:uppercase}
+    .intro{max-width:900px;color:#47586e;margin:0 0 12px}
+    .news-list{padding:0;margin:0;list-style:none}
+    .news-list li{display:grid;grid-template-columns:92px 1fr;gap:17px;align-items:start;padding:11px 0;border-bottom:1px dotted #dde5ee}
+    .news-list li:last-child{border-bottom:0}
+    .news-year{font:700 12px/2 "Segoe UI",Arial,sans-serif;color:#08788d;letter-spacing:.5px}
+    .news-list p{margin:0;color:#3e536b}
+    .list-feature{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 40px}
+    .interest h3{color:#243b58;font-size:16px;margin:0 0 5px}
+    .interest p{margin:0;color:#576a80;font-size:14px}
+    .project-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .project{padding:21px 22px;background:#fff;border:1px solid #dde5ef;border-radius:7px;box-shadow:0 3px 18px rgba(38,57,82,.025)}
+    .project h3{font-size:16px;line-height:1.6;margin:7px 0;color:#233a56}
+    .project .label{font:700 11px/1.5 "Segoe UI",sans-serif;letter-spacing:.6px;color:#03788c}
+    .project p{font-size:13px;color:#5c6f85;margin:9px 0}
+    .project .links{font-size:13px;margin:13px 0 0}
+    .teacher-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .teacher{display:flex;gap:17px;background:white;border:1px solid #dce5ef;padding:19px;border-radius:7px;align-items:flex-start;min-height:195px}
+    .teacher img{width:91px;height:119px;object-fit:cover;flex-shrink:0;background:#e3ebf5;border-radius:4px;border:1px solid #d5dfe9}
+    .teacher h3{font-size:17px;color:var(--navy);margin:0;line-height:1.35}
+    .teacher .latin{color:#65768a;font-size:12px;margin:1px 0 5px}
+    .teacher .role{font-size:12px;font-weight:700;color:#08768a;margin:2px 0 7px}
+    .teacher .focus{font-size:13px;color:#586a80;line-height:1.7;margin:0 0 7px}
+    .teacher a{font-size:12px;font-weight:650}
+    .note{color:#718097;font-size:12px;margin-top:12px}
+    .teachlist{margin:0;padding-left:20px;color:#52677e}
+    .teachlist li{margin:7px 0}
+    .contact{display:grid;grid-template-columns:1.25fr 1fr;gap:30px;align-items:start}
+    .contact p{margin:3px 0 11px;color:#576a80}
+    .contact a{overflow-wrap:anywhere}
+    .foot{background:#192d46;color:#d8e2ef;padding:27px 0;font-size:12px}
+    .foot .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .foot a{color:#e2f4f8}
+    @media(max-width:780px){.header-row{padding:12px 0;align-items:flex-start;flex-direction:column;gap:9px}.nav{gap:8px 15px}.hero{padding:72px 0}.hero h1{font-size:38px}.hero .cn{font-size:17px;letter-spacing:.5px}.content{padding-top:36px}.list-feature,.project-list,.teacher-list,.contact{grid-template-columns:1fr}.section{margin-bottom:49px}}
+    @media(max-width:480px){.container{padding:0 18px}.hero h1{font-size:33px}.hero .tagline{font-size:14px}.news-list li{grid-template-columns:64px 1fr;gap:8px}.teacher{padding:14px;gap:13px}.teacher img{width:76px;height:100px}.sec-head h2{font-size:21px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">ECUT-VQA<small>Visual Quality Assessment Group</small></a>
+      <nav class="nav" aria-label="主导航">
+        <a class="active" href="index.html" aria-current="page">首页</a>
+        <a href="#news">新闻动态</a>
+        <a href="#interests">研究方向</a>
+        <a href="members.html">团队成员</a>
+        <a href="publications.html">发表成果</a>
+        <a href="#contact">联系我们</a>
+        <a href="https://github.com/ECUT-VQA" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="eyebrow">East China University of Technology · ECUT-VQA</div>
+        <h1 id="hero-title">Visual Quality Assessment Group</h1>
+        <p class="cn">东华理工大学视觉质量评价研究团队</p>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="tagline">Perception, Image Quality, and Intelligent Visual Computing</p>
+        <p class="strap">图像质量评价 · 计算机视觉 · 模式识别 · 深度学习</p>
+      </div>
+    </section>
+    <div class="container content">
+      <section class="section" id="news" aria-labelledby="news-title">
+        <div class="sec-head"><h2 id="news-title">新闻动态</h2><span>News &amp; Updates</span></div>
+        <ul class="news-list">
+          <li><span class="news-year">2026 · 录用</span><p>团队研究成果《扩散先验多尺度层级自适应无参考图像质量评价》被《中国图象图形学报》录用，计划于 2027 年刊出。<a href="https://doi.org/10.11834/jig.260455">论文 DOI</a> · <a href="https://github.com/ECUT-VQA/Diffusion-prior-multi-scale-hierarchical-adaptive-no-reference-image-quality-assessment">开源代码</a></p></li>
+          <li><span class="news-year">2024 · 发表</span><p>论文 <em>Dual-stream mutually adaptive quality assessment for authentic distortion image</em> 发表于 <em>Journal of Visual Communication and Image Representation</em>。<a href="https://doi.org/10.1016/j.jvcir.2024.104216">论文 DOI</a> · <a href="https://github.com/ECUT-VQA/Dual-Stream-Mutually-Adaptive-Quality-Assessment-for-Authentic-Distortion-Image">开源代码</a></p></li>
+        </ul>
+      </section>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="sec-head"><h2 id="about-title">团队简介</h2><span>About Us</span></div>
+        <p class="intro">ECUT-VQA 是东华理工大学视觉质量评价研究团队，围绕图像质量评价、计算机视觉、图像处理与模式识别等方向开展研究，关注真实场景下的图像质量感知、视觉特征表示与智能评价方法，致力于推动研究成果的开放交流和可复现实现。</p>
+        <p class="intro">We study perceptual image quality assessment, image processing, pattern recognition and learning-based visual computing, with an emphasis on real-world distortions and reproducible research.</p>
+      </section>
+      <section class="section" id="interests" aria-labelledby="interests-title">
+        <div class="sec-head"><h2 id="interests-title">研究兴趣</h2><span>Research Interests</span></div>
+        <div class="list-feature">
+          <div class="interest"><h3>无参考图像质量评价</h3><p>No-Reference Image Quality Assessment. 研究真实失真图像在缺少参考图像条件下的感知质量预测。</p></div>
+          <div class="interest"><h3>图像处理与模式识别</h3><p>Image Processing &amp; Pattern Recognition. 探索面向多样化视觉数据的表征、分析与识别方法。</p></div>
+          <div class="interest"><h3>计算机视觉与感知建模</h3><p>Computer Vision &amp; Perceptual Modeling. 研究视觉语义、局部失真及感知质量之间的关系。</p></div>
+          <div class="interest"><h3>深度学习与扩散模型先验</h3><p>Deep Learning &amp; Diffusion Priors. 探索多尺度特征融合与扩散先验在图像质量评价中的应用。</p></div>
+        </div>
+      </section>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="sec-head"><h2 id="projects-title">代表性科研成果</h2><span>Selected Research</span></div>
+        <div class="project-list">
+          <article class="project"><div class="label">JVCIR · 2024</div><h3>Dual-Stream Mutually Adaptive Quality Assessment</h3><p>面向真实失真图像的双流互适应质量评价方法。</p><div class="links"><a href="https://doi.org/10.1016/j.jvcir.2024.104216">Paper</a> · <a href="https://github.com/ECUT-VQA/Dual-Stream-Mutually-Adaptive-Quality-Assessment-for-Authentic-Distortion-Image">Code</a></div></article>
+          <article class="project"><div class="label">2026 ACCEPTED · 2027 PLANNED</div><h3>Multi-Scale Hierarchical Adaptive NR-IQA via Diffusion Prior</h3><p>利用扩散模型先验与多尺度层级自适应特征融合进行无参考图像质量评价。</p><div class="links"><a href="https://doi.org/10.11834/jig.260455">DOI</a> · <a href="https://github.com/ECUT-VQA/Diffusion-prior-multi-scale-hierarchical-adaptive-no-reference-image-quality-assessment">Code</a></div></article>
+        </div>
+        <p style="margin:15px 0 0;font-size:13px"><a href="publications.html">查看全部发表成果 / Publications →</a></p>
+      </section>
+      <section class="section" id="faculty" aria-labelledby="faculty-title">
+        <div class="sec-head"><h2 id="faculty-title">指导教师</h2><span>Faculty &amp; Supervisors</span></div>
+        <div class="teacher-list">
+          <article class="teacher">
+            <img src="data:image/jpeg;base64,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" alt="王同罕老师的教师简介照片" loading="lazy">
+            <div><h3>王同罕</h3><p class="latin">Tonghan Wang</p><p class="role">副教授 · 硕士研究生导师</p><p class="focus">东南大学博士。研究方向包括图像质量评价、图像处理、模式识别、计算机视觉及视觉信息智能处理。</p><a href="https://ses.ecut.edu.cn/09/eb/c9824a133611/page.htm">学校教师主页 →</a></div>
+          </article>
+          <article class="teacher">
+            <img src="data:image/jpeg;base64,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" alt="贾惠珍老师的教师简介照片" loading="lazy">
+            <div><h3>贾惠珍</h3><p class="latin">Huizhen Jia</p><p class="role">副教授 · 硕士研究生导师</p><p class="focus">南京理工大学工学博士。研究方向包括模式识别、机器学习及其在图像处理领域的理论与应用。</p><a href="https://ies.ecut.edu.cn/0e/06/c2315a69126/page.htm">学校教师主页 →</a></div>
+          </article>
+        </div>
+        <p class="note">教师简介依据所提供的学校公开资料整理；照片取自学校教师介绍页面截图，正式对外使用前请确认照片使用许可。详细信息与最新职务以学校主页为准。</p>
+        <p style="font-size:13px;margin-top:12px"><a href="members.html">查看更多团队成员 →</a></p>
+      </section>
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="sec-head"><h2 id="education-title">教学与人才培养</h2><span>Teaching &amp; Mentoring</span></div>
+        <p class="intro">团队重视计算机科学基础与视觉智能研究训练。王同罕老师的学校教师简介列有人工智能、机器学习、数据结构、操作系统、程序设计等相关教学任务，具体授课安排以学校发布信息为准。</p>
+        <p class="intro">欢迎对图像质量评价、图像处理、机器学习与计算机视觉研究感兴趣的同学关注相关方向；招生与培养安排以学校官方通知为准。</p>
+      </section>
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="sec-head"><h2 id="contact-title">联系与合作</h2><span>Contact &amp; Collaboration</span></div>
+        <div class="contact">
+          <div><p><strong>ECUT-VQA · 东华理工大学视觉质量评价研究团队</strong></p><p>欢迎围绕图像质量评价、模式识别及相关开源项目开展学术交流。</p><p><a href="https://github.com/ECUT-VQA">GitHub Organization →</a> · <a href="members.html">团队成员 →</a></p></div>
+          <div><p><strong>公开学术联系邮箱</strong></p><p>王同罕：<a href="mailto:thwang@ecut.edu.cn">thwang@ecut.edu.cn</a></p><p>贾惠珍：<a href="mailto:jiahuizhen@ecut.edu.cn">jiahuizhen@ecut.edu.cn</a></p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="foot"><div class="container"><span>© ECUT-VQA · East China University of Technology</span><span><a href="members.html">Members</a> · <a href="publications.html">Publications</a> · <a href="https://github.com/ECUT-VQA">GitHub</a></span></div></footer>
+</body>
+</html>
